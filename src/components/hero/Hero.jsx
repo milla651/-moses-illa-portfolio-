@@ -84,7 +84,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Build Â· Train Â· Deploy Â· Scale Â· Automate Â· Innovate
+        Build -- Train -- Deploy -- Scale -- Automate -- Innovate
       </motion.div>
       <div className="imageContainer">
         <img src="/hero.png" alt="Moses Illa" />

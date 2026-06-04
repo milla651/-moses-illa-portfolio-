@@ -60,7 +60,7 @@ const Services = () => {
         >
           <h2>Machine Learning</h2>
           <p>
-            End-to-end ML pipelines using PyTorch and Scikit-learn €" from data
+            End-to-end ML pipelines using PyTorch and Scikit-learn - from data
             preprocessing and model training to deployment. Specialised in
             anomaly detection, fraud detection, and classification systems with
             measurable business impact.
@@ -73,7 +73,7 @@ const Services = () => {
         >
           <h2>Computer Vision</h2>
           <p>
-            Building vision pipelines with OpenCV and deep learning €" face
+            Building vision pipelines with OpenCV and deep learning - face
             recognition, object detection, document extraction (DONUT), OCR, and
             image quality assessment. Deployed in production with real users and
             real throughput.
