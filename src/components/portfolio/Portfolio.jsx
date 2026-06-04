@@ -5,27 +5,27 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "PrideMatch - Face Recognition SaaS",
+    img: "https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    desc: "A production-ready SaaS platform that uses PyTorch and FAISS for face recognition and zero-shot image classification with OpenAI CLIP. Features JWT authentication, Celery async task queues, MinIO object storage, and a mobile-first interface. Eliminates manual photo sorting for events and organisations.",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Fraud Detection - Microfinance AI",
+    img: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    desc: "End-to-end fraud detection pipeline built for a microfinance company using XGBoost and CatBoost optimised for ROC-AUC. Designed with 13+ relational PostgreSQL models and a Flask REST API for real-time inference. Reduced fraudulent transactions and improved loan approval accuracy.",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "DONUT Invoice Extraction",
+    img: "https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    desc: "Fine-tuned the DONUT (Document Understanding Transformer) model to extract structured data from complex invoice layouts for a property enterprise. Handles scanned PDFs and images with Tesseract OCR fallback. Reduced manual data entry time by automating end-to-end document processing.",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Data Warehouse & BI Platform",
+    img: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    desc: "Built a full data warehouse with dbt transformation layers and Apache Superset dashboards on PostgreSQL. Integrated Salesforce CRM data pipelines for a multi-property portfolio management system with automated rent collection tracking and lease analytics.",
   },
 ];
 
@@ -43,7 +43,7 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+            <img src={item.img} alt={item.title} />
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
@@ -72,7 +72,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Featured Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

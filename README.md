@@ -1,8 +1,22 @@
-# React + Vite
+# Moses Illa â€” Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Moses Illa, AI & Machine Learning Engineer based in Nairobi, Kenya.
 
-Currently, two official plugins are available:
+## Built With
+- React + Vite
+- Framer Motion (animations)
+- SCSS (styling)
+- EmailJS (contact form)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sections
+- **Hero** â€” Introduction
+- **Services** â€” ML, Computer Vision, Backend APIs, AI Automation
+- **Skills** â€” Full tech stack breakdown
+- **Portfolio** â€” Featured projects
+- **Contact** â€” Get in touch
+
+## Run Locally
+```bash
+npm install
+npm run dev
+```

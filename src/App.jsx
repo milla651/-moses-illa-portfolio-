@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   return (
@@ -18,9 +19,12 @@ const App = () => {
       <section id="Services">
         <Parallax type="services" />
       </section>
-      <section>
+      <section style={{ height: "auto", overflow: "visible" }}>
         <Services />
       </section>
+      <div id="Skills">
+        <Skills />
+      </div>
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
@@ -28,9 +32,6 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
-      {/* Framer Motion Crash Course */}
-      {/* <Test/>
-    <Test/> */}
     </div>
   );
 };

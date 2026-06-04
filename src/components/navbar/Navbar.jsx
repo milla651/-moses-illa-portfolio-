@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="navbar">
-      {/* Side bar */}
       <Sidebar />
       <div className="wrapper">
         <motion.span
@@ -13,20 +12,30 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Brian
+          Moses Illa
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a
+            href="https://www.linkedin.com/in/moses-illa-602759298/"
+            target="_blank"
+            rel="noreferrer"
+            title="LinkedIn"
+          >
+            <img src="/linkedin.png" alt="LinkedIn" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
+          <a
+            href="https://github.com/milla651/"
+            target="_blank"
+            rel="noreferrer"
+            title="GitHub"
+          >
+            <img src="/dribbble.png" alt="GitHub" />
           </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a
+            href="mailto:mosesilla651@gmail.com"
+            title="Email"
+          >
+            <img src="/instagram.png" alt="Email" />
           </a>
         </div>
       </div>

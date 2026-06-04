@@ -1,0 +1,59 @@
+@import "../../app.scss";
+
+.skills {
+  background: linear-gradient(180deg, #111132, #0c0c1d);
+  padding: 80px 40px;
+  max-width: 1366px;
+  margin: auto;
+
+  h2 {
+    font-size: 48px;
+    color: orange;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .groupsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .group {
+      h3 {
+        font-size: 18px;
+        color: lightgray;
+        margin-bottom: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-left: 3px solid orange;
+        padding-left: 12px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .tag {
+          padding: 8px 18px;
+          border: 1px solid rgba(255, 165, 0, 0.4);
+          border-radius: 20px;
+          font-size: 14px;
+          color: lightgray;
+          background: rgba(255, 165, 0, 0.05);
+          transition: background 0.3s, color 0.3s;
+
+          &:hover {
+            background: orange;
+            color: #0c0c1d;
+            font-weight: 600;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}

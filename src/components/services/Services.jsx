@@ -21,7 +21,6 @@ const variants = {
 
 const Services = () => {
   const ref = useRef();
-
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
@@ -29,15 +28,13 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
       ref={ref}
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          I build intelligent systems that solve
+          <br /> real-world problems at scale
         </p>
         <hr />
       </motion.div>
@@ -45,7 +42,7 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{ color: "orange" }}>Production</motion.b> AI
           </h1>
         </div>
         <div className="title">
@@ -61,12 +58,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Machine Learning</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            End-to-end ML pipelines using PyTorch and Scikit-learn €" from data
+            preprocessing and model training to deployment. Specialised in
+            anomaly detection, fraud detection, and classification systems with
+            measurable business impact.
           </p>
           <button>Go</button>
         </motion.div>
@@ -74,12 +71,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Computer Vision</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Building vision pipelines with OpenCV and deep learning €" face
+            recognition, object detection, document extraction (DONUT), OCR, and
+            image quality assessment. Deployed in production with real users and
+            real throughput.
           </p>
           <button>Go</button>
         </motion.div>
@@ -87,12 +84,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Backend & APIs</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            RESTful APIs built with Flask, secured with JWT authentication and
+            role-based access control. Async task processing via Celery and
+            Redis, file storage with MinIO, and PostgreSQL schemas designed for
+            complex relational data.
           </p>
           <button>Go</button>
         </motion.div>
@@ -100,12 +97,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>AI Automation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Automating workflows with LLM integration, document processing, and
+            intelligent data pipelines. From invoice extraction to fraud
+            flagging, I turn manual, error-prone processes into reliable
+            automated systems.
           </p>
           <button>Go</button>
         </motion.div>

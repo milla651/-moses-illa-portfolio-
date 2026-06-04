@@ -13,6 +13,7 @@ const variants = {
     },
   },
 };
+
 const itemVariants = {
   open: {
     y: 0,
@@ -25,19 +26,36 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = ["Home", "About", "Services", "Portfolio", "Contact"];
+  const items = [
+    { label: "Home", id: "Homepage" },
+    { label: "Services", id: "Services" },
+    { label: "Skills", id: "Skills" },
+    { label: "Portfolio", id: "Portfolio" },
+    { label: "Contact", id: "Contact" },
+  ];
+
+  const handleClick = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.a
-          href={`#${item}`}
-          key={item}
+          href={`#${item.id}`}
+          key={item.label}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleClick(item.id);
+          }}
         >
-          {item}
+          {item.label}
         </motion.a>
       ))}
     </motion.div>

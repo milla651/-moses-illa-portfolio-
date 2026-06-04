@@ -31,16 +31,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_qszqtmj",
+        "template_0kxkjxo",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "vzSwi6Lm5Furei_ZO"
       )
       .then(
-        (result) => {
+        () => {
           setSuccess(true);
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );
@@ -55,19 +55,16 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>Let's work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>mosesilla651@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>Location</h2>
+          <span>Nairobi, Kenya</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
-        </motion.div>
+
       </motion.div>
       <div className="formContainer">
         <motion.div
@@ -109,9 +106,9 @@ const Contact = () => {
           <input type="text" required placeholder="Name" name="name" />
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Message" name="message" />
-          <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          <button>Send Message</button>
+          {error && <span style={{ color: "red" }}>Something went wrong. Please try again.</span>}
+          {success && <span style={{ color: "lightgreen" }}>Message sent! I will get back to you soon.</span>}
         </motion.form>
       </div>
     </motion.div>
