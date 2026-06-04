@@ -1,6 +1,8 @@
-# Moses Illa â€” Portfolio
+# Moses Illa - Portfolio
 
 Personal portfolio website for Moses Illa, AI & Machine Learning Engineer based in Nairobi, Kenya.
+
+Live at: https://moses-illa.vercel.app
 
 ## Built With
 - React + Vite
@@ -9,11 +11,11 @@ Personal portfolio website for Moses Illa, AI & Machine Learning Engineer based 
 - EmailJS (contact form)
 
 ## Sections
-- **Hero** â€” Introduction
-- **Services** â€” ML, Computer Vision, Backend APIs, AI Automation
-- **Skills** â€” Full tech stack breakdown
-- **Portfolio** â€” Featured projects
-- **Contact** â€” Get in touch
+- **Hero** - Introduction
+- **Services** - ML, Computer Vision, Backend APIs, AI Automation
+- **Skills** - Full tech stack breakdown
+- **Portfolio** - Featured projects
+- **Contact** - Get in touch
 
 ## Run Locally
 ```bash
