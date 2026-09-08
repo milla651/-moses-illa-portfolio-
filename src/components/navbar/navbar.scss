@@ -6,27 +6,33 @@
   .wrapper {
     max-width: 1366px;
     margin: auto;
+    padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
 
     @include mobile {
-      justify-content: flex-end;
-      padding: 20px;
+      justify-content: space-between;
+      padding: 0 24px;
     }
 
     span {
       font-weight: bold;
+      font-size: 18px;
 
       @include mobile {
-        display: none;
+        font-size: 14px;
       }
     }
 
     .social {
       display: flex;
       gap: 20px;
+
+      @include mobile {
+        gap: 14px;
+      }
 
       img {
         width: 18px;

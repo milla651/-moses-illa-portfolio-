@@ -2,9 +2,13 @@
 
 .skills {
   background: linear-gradient(180deg, #111132, #0c0c1d);
-  padding: 80px 40px;
+  padding: 80px 80px;
   max-width: 1366px;
   margin: auto;
+
+  @include mobile {
+    padding: 50px 24px;
+  }
 
   h2 {
     font-size: 48px;
@@ -13,12 +17,22 @@
     margin-bottom: 60px;
     letter-spacing: 4px;
     text-transform: uppercase;
+
+    @include mobile {
+      font-size: 28px;
+      margin-bottom: 36px;
+      letter-spacing: 2px;
+    }
   }
 
   .groupsContainer {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include mobile {
+      gap: 28px;
+    }
 
     .group {
       h3 {
@@ -30,12 +44,22 @@
         text-transform: uppercase;
         border-left: 3px solid orange;
         padding-left: 12px;
+
+        @include mobile {
+          font-size: 14px;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
       }
 
       .tags {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+
+        @include mobile {
+          gap: 8px;
+        }
 
         .tag {
           padding: 8px 18px;
@@ -45,6 +69,11 @@
           color: lightgray;
           background: rgba(255, 165, 0, 0.05);
           transition: background 0.3s, color 0.3s;
+
+          @include mobile {
+            font-size: 12px;
+            padding: 6px 12px;
+          }
 
           &:hover {
             background: orange;
