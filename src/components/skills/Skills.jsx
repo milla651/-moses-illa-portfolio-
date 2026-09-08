@@ -4,23 +4,43 @@ import { motion } from "framer-motion";
 const skillGroups = [
   {
     category: "AI & Machine Learning",
-    skills: ["PyTorch", "Scikit-learn", "XGBoost", "CatBoost", "FAISS", "MLflow", "Weights & Biases"],
+    skills: ["PyTorch", "Scikit-learn", "XGBoost", "CatBoost", "FAISS", "Pinecone", "MLflow", "Weights & Biases", "Optuna", "SHAP", "SMOTE"],
   },
   {
-    category: "Computer Vision & NLP",
-    skills: ["OpenCV", "CLIP (ViT-B/32)", "DONUT", "Tesseract OCR", "Transformers", "HuggingFace"],
+    category: "RAG & Vector Search",
+    skills: ["LangGraph", "Qdrant Cloud", "FAISS", "Pinecone", "Hybrid Dense+Sparse Retrieval", "Query Decomposition", "Session-Isolated Chat Memory"],
+  },
+  {
+    category: "Computer Vision & Document AI",
+    skills: ["OpenCV", "CLIP (ViT-B/32)", "DONUT", "MONAI", "TorchXRayVision", "GradCAM", "Tesseract OCR", "PaddleOCR", "DICOM Processing"],
+  },
+  {
+    category: "Frontend",
+    skills: ["Vue 3 Composition API", "Vuetify 3", "Pinia", "CASL RBAC", "vue-i18n (RTL)", "WebSockets", "SignalR", "Vite", "Tailwind CSS", "ApexCharts"],
   },
   {
     category: "Backend & APIs",
-    skills: ["Python", "Flask", "REST APIs", "Celery", "Redis", "JWT Auth", "MinIO / S3"],
+    skills: ["Python", "FastAPI", "Flask", "Laravel 10", "PHP 8.3", "REST APIs", "Celery", "Redis", "Gunicorn", "Nginx", "JWT Auth", "MinIO / S3"],
+  },
+  {
+    category: "ERP & Enterprise Integration",
+    skills: ["SAP Business One (B1)", "FMS Formatted Search", "Document Lifecycle Management", "Multi-Tenant SaaS", "Spatie Multitenancy", "Sanctum Auth"],
   },
   {
     category: "Data & Databases",
-    skills: ["PostgreSQL", "MongoDB", "dbt", "Pandas", "NumPy", "Apache Superset"],
+    skills: ["PostgreSQL", "MySQL", "BigQuery", "MongoDB", "dbt", "Pandas", "NumPy", "Apache Superset", "Trafilatura"],
   },
   {
     category: "DevOps & Cloud",
-    skills: ["Docker", "AWS (EC2, S3, Lambda)", "GitHub Actions", "CI/CD", "DigitalOcean", "Nginx"],
+    skills: ["Docker", "Docker Compose", "AWS (EC2, S3, Lambda, SageMaker)", "Terraform", "Railway", "DigitalOcean", "GitHub Actions", "CI/CD", "PM2"],
+  },
+  {
+    category: "Payments & Integrations",
+    skills: ["M-Pesa Daraja API", "Stripe", "Twilio WhatsApp", "SendGrid", "WeasyPrint", "ReportLab", "WhatsApp Business API"],
+  },
+  {
+    category: "Security & Compliance",
+    skills: ["JWT Authentication", "RBAC", "HIPAA-Compliant Audit Logging", "Data Encryption", "DICOM De-identification"],
   },
 ];
 
