@@ -17,7 +17,7 @@
     }
 
     .textContainer {
-      width: 50%;
+      width: 60%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -84,25 +84,6 @@
       }
     }
   }
-
-  .imageContainer {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    @include mobile {
-      height: 50%;
-      width: 100%;
-      top: unset;
-      bottom: 0;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   .slidingTextContainer {

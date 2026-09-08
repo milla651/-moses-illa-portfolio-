@@ -17,9 +17,9 @@ const items = [
   },
   {
     id: 3,
-    title: "PrideMatch - AI-Powered Multi-Tenant Safari Photo SaaS",
-    img: "https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    desc: "Live at pridematches.online with real paying customers. Fine-tuned a pretrained PyTorch model for face identification achieving 95%+ accuracy across 5,000+ images per trip. Built a FAISS similarity matching engine with dual payment processing via Stripe and M-Pesa, JWT authentication, Celery async task queues, MinIO object storage, and a mobile-first interface.",
+    title: "Clinical Disease Prediction ML Platform",
+    img: "https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    desc: "End-to-end machine learning platform for clinical disease prediction built on a multi-model ensemble (XGBoost, CatBoost, Random Forest) with automated feature engineering and SHAP-based explainability. Delivered risk stratification scores and early warning indicators integrated into a Flask REST API with a clinician-facing dashboard for real-time patient triage.",
   },
   {
     id: 4,

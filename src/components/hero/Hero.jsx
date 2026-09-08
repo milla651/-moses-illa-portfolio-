@@ -86,9 +86,7 @@ const Hero = () => {
       >
         Build -- Train -- Deploy -- Scale -- Automate -- Innovate
       </motion.div>
-      <div className="imageContainer">
-        <img src="/hero.png" alt="Moses Illa" />
-      </div>
+
     </div>
   );
 };
