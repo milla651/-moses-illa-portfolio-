@@ -23,6 +23,10 @@ a {
 section {
   height: 100vh;
   overflow: hidden;
+
+  @media (max-width: 738px) {
+    overflow: visible;
+  }
 }
 
 @mixin mobile {

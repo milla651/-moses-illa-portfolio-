@@ -11,10 +11,13 @@
 
   h1 {
     font-size: 100px;
+    position: relative;
+    z-index: 5;
 
     @include mobile {
-      font-size: 72px;
+      font-size: 42px;
       text-align: center;
+      padding: 0 20px;
     }
   }
 
