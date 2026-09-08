@@ -106,6 +106,19 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Digital Marketing</h2>
+          <p>
+            Data-driven digital marketing strategies combining SEO, social media
+            management, and AI-powered content pipelines. From campaign
+            analytics and audience segmentation to automated reporting
+            dashboards that turn raw data into actionable growth insights.
+          </p>
+          <button>Go</button>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
